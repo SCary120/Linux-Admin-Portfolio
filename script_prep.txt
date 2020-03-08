@@ -1,0 +1,64 @@
+Create groups:
+
+groupadd admin
+groupadd developers
+groupadd staff
+groupadd temp
+
+Add user to group:
+
+usermod -a -G "groupname" "username"
+
+
+Create group folders:
+
+mkdir -p /var/class/admin/
+mkdir -p /var/class/developers/
+mkdir -p /var/class/staff/
+mkdir -p /var/class/temp/
+
+mkdir -p /var/class/"groupname"/Policy/
+mkdir -p /var/class/"groupname"/General_Company_Policy/
+
+
+Set subfolder and permissions for groups:
+
+chgrp -R "groupname" /var/class/"groupname"
+
+chmod -R 2775 /var/class/"groupname"
+
+chmod 040 /var/class/"groupname"/Policy/
+chmod 444 /var/class/"groupname"/General_Compnay_Policy/
+
+
+
+Admin users need sudo access
+developers need c shell
+temps need to limit disk usuage
+
+
+
+
+
+
+
+List IP tables
+
+iptables -L  <-- List ipv4
+ip6tables -L  <-- List ipv6
+
+iptables -A INPUT -s "IP-ADDRESS" -j DROP  <-- Syntax to block IP address  <-- Add the rule
+
+iptables -D INPUT -s "IP-ADDRESS" -j DROP <-- Syntax to drop rule.
+
+
+Make IP Tables Persist
+
+apt-get update
+apt-get install iptables-persistent
+
+invoke-rc.d iptables-persistent save
+
+
+
+
