@@ -1,0 +1,56 @@
+February 19, 2020 - Updates done on both CentOS and Unbuntu VM's.
+
+Installed fail2ban, TMUX, Emacs, VIM, cowsay, lolcat.
+ran "update/upgrade" on packages and OS.  
+
+
+February 23, 2020 - Updates done on both CentOS and Unbuntu VM's.
+
+ran "update/upgrade" on packages and OS.  
+
+
+March 2, 2020 - Updates done on both CentOS and Unbuntu VM's.
+
+ran "update/upgrade" on packages and OS.
+added python scripts to CentOS
+added users, groups, directories and subfolders to CentOS
+
+March 8, 2020 - Updates done on both CentOS and Unbuntu VM's.
+
+ran "update/upgrade on packages and os.
+added python scripts to Unbuntu Server.
+added users, groups, directories and subfolders to Unbuntu Server
+set passwords for users on CentOS
+
+Unbuntu important file locations:
+
+/etc/fail2ban/jail.local
+/usr/bin/tmux
+/usr/bin/vim
+/usr/bin/emacs
+/usr/games/lolcat
+/usr/games/cowsay
+/etc/netplan/50-cloud-init.yaml  <--- Network configuration file.
+/etc/apt/sources.list  <-- Repositories
+/usr/sbin/iptables <-- all iptables live in /usr/sbin/ with a link to /etc/alternatives.
+/home/scary/class/ <-- Python scripts to create and modify users/passwords.
+
+
+CentOS important file locations:
+
+/etc/fail2ban/jail.local
+/usr/bin/tmux
+/usr/bin/vim
+/usr/bin/emacs
+/etc/netconfig <-- Network configuration file.
+/etc/yum.repos.d <-- Repositories
+/usr/sbin/iptables
+/root/class/username_labs/ <-- Python scripts to create and modify users/passwords.
+
+Cosway and lolcat not installed on CentOS 8 VM.
+
+
+
+
+
+
