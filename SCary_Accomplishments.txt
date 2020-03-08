@@ -1,0 +1,93 @@
+Week ending 1/26
+
+    Accomplishment - Signed NDA for Acme Corp.   Attended first classes and reviewed class folders, announcements, and Read Me First.
+
+    Challenge -  Smooth sailing the first week.
+
+Week ending 2/2
+
+    Accomplishment -  Installed and completed initial configuration of CentOS and Unbuntu Server VM's. Submitted first batch of documentation.
+
+    Challenge - Again, no major issues.  Installations went smoothly.
+
+Week ending 2/9
+
+    Accomplishment -  Started working on sed, grep, and awk labs.  Verified I was able to connect to both VM's using WinSCP and Filezilla.
+
+    Challenge -  Did not realize that I had to manipulate the text file I transferred from my laptop to my vm using awk.  Thanks to Dan for the assist.  Until the awk statement was run against the text file, certain sed statements failed to print output.
+
+Week ending 2/16
+
+    Accomplishment -  Submitted sed lab, and continued to work through grep, and awk.  Installed fail2ban, tmux, emacs, VI/VIM, lolcat and cowsay.
+
+    Challenge - Figuring out that I had to change the delimeter to get my sed script to work.   Also, lolcat and cowsay were not available for CentOS 8, I had tried to install both several times before learning this.  They installed successfully on my Unbuntu VM.
+
+Week ending 2/23
+
+    Accomplishment -  Completed documentation for continued setup lab.  Also completed and submitted awk and grep labs.
+
+    Challenge -  Getting the awk script to work the way I wanted.
+
+Week ending 3/1
+
+    Accomplishment -  Completed script prep (created groups, folders and subfolders)  added python scripts to CentOS. Added users.
+
+    Challenge - Struggling with setting user passwords via python script.
+
+Week ending 3/8
+
+    Accomplishment -  Solved password script by using chpasswd against a text file.  Added users, groups, scripts to Unbuntu OS.  Uploaded all files to Github Portfolio.
+
+    Challenge -  password script does not work in Unbuntu Server for some reason and only grabs the last user in the file. Still working.
+
+Week ending 3/15
+
+    Accomplishment - 
+
+    Challenge - 
+
+First portfolio, accomplishments, documentation and presentation review in class
+
+Week ending 3/22
+
+    Accomplishment - 
+
+    Challenge - 
+
+Week ending 3/29
+
+    Accomplishment - 
+
+    Challenge - 
+
+Week ending 4/5
+
+    Accomplishment - 
+
+    Challenge - 
+
+Week ending 4/12
+
+    Accomplishment - 
+
+    Challenge - 
+
+Week ending 4/19
+
+    Accomplishment - 
+
+    Challenge - 
+
+Week ending 4/26
+
+    Accomplishment - 
+
+    Challenge - 
+
+Week ending 5/3
+
+    Accomplishment - 
+
+    Challenge - 
+
+Final review for portfolio, documentation, accomplishments.  This is the final review for your three months at Acme Corporation.
