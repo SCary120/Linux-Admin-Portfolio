@@ -1,0 +1,10 @@
+#!/usr/bin/awk -f
+
+BEGIN {FS=":"}
+
+/Savage/ {print $1, $2}
+
+BEGIN {FS=":"} 
+/Chet/ {print $3, $4, $5}
+
+($3>=250) {print $0}

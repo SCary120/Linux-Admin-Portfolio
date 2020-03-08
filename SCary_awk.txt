@@ -1,0 +1,116 @@
+Lab3.data
+
+1. Print all the phone numbers.
+
+awk -F: '{print $2}' lab3.data
+
+2. Print Dan 's phone number.
+
+awk -F: '/Dan/ {print $2}' lab3.data
+
+3. Print Susan 's name and phone number.
+
+awk -F: '/Susan/ {print $1,$2}' lab3.data
+
+4. Print all last names beginning with D.
+
+awk -F"[ :]" '$2~/^D/ {print $2}' lab3.data
+
+5. Print all first names beginning with either a C or E.
+
+awk  '$1~/^(C|E)/ %{print $1}' lab3.data
+
+6. Print all first names containing only four characters.
+
+awk  '$1~/^[A-Za-z][A-Za-z][A-Za-z][A-Za-z]$/{print $1}' lab3.data
+
+7. Print the first names of all those in the 916 area code.
+
+awk '/916/ {print $1}' lab3.data
+
+8. Print Mike 's campaign contributions. Each value should be printed with a leading dollar sign; e.g., $250 $100 $175.
+
+awk -F: '/Mike/ {print "$"$3,"$"$4,"$"$5}' lab3.data
+
+9. Print last names followed by a comma and the first name.
+
+awk -F"[ :]" '{print $2 ", " $1}' lab3.data
+
+10. Write an awk script called facts that:
+
+    Prints full names and phone numbers for the Savages.
+
+	awk -F: '/Savage/ {print $1, $2}' lab3.data
+
+    Prints Chet 's contributions.
+
+	awk -F: '/Chet/ {print $3, $4, $5}' lab3.data
+
+    Prints all those who contributed $250 the first month.
+
+	awk -F: '($3>=250) {print $0}' lab3.data
+
+
+#!/usr/bin/awk -f
+
+BEGIN {FS=":"}
+
+/Savage/ {print $1, $2}
+
+BEGIN {FS=":"} 
+/Chet/ {print $3, $4, $5}
+
+($3>=250) {print $0}
+
+
+
+
+
+
+
+
+Lab4.data
+
+
+
+1. Print the first and last names of those who contributed more than $100 in the second month.
+
+awk -F '[: ]' '$6>100{print $1,$2,$3 $4}' lab4.data
+
+2. Print the names and phone numbers of those who contributed less than $85 in the last month.
+
+awk -F '[: ]' '$7<85{print $1,$2,$3 $4}' lab4.data
+
+3. Print the names of those who contributed between $75 and $150 in the first month.
+
+awk -F '[: ]' '$5>75 && $5<150{print $1,$2}' lab4.data
+
+4. Print the names of those who contributed less than $800 over the three-month period.
+
+awk -F '[: ]' '($5+$6+47)<800{print $1,$2}' lab4.data
+
+5. Print the names and addresses of those with an average monthly contribution greater than $200.
+
+awk -F '[: ]' '($5+$6+$7)/3>200{print $1,$2,$3 $4}' lab4.data
+
+6. Print the first name of those not in the 916 area code.
+
+awk -F '[: ]' '!($3=="(916)"){print $2}' lab4.data
+
+7. Print each record preceded by the number of the record.
+
+awk '{print NR,$0}' lab4.data
+
+8. Print the name and total contribution of each person.
+
+awk -F '[: ]' '{print $1,$2,$5+$6+$7}' lab4.data
+
+9. Add $10 to Chet 's second contribution.
+
+awk -F '[: ]' '/^\<Chet\>/{print $6+10}' lab4.data 
+
+10. Change Nancy McNeil 's name to Louise McInnes.
+
+awk -F '[: ]' '$1=="Nancy" && $2=="McNeil"{$1="Louise";$2="McInnes";print $1,$2 }' lab4.data
+
+
