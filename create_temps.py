@@ -1,7 +1,7 @@
 import os
 import linecache
 
-temps = open("admin_users.txt","w")
+temps = open("temp_users.txt","w")
 file = "users.txt"
 ln = 180
 
