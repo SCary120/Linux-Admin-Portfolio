@@ -1,0 +1,221 @@
+---ifconfig----
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.82  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::aa73:d2d4:e97e:55b2  prefixlen 64  scopeid 0x20<link>
+        inet6 2601:18a:8302:49e5:fb9a:d22:f62c:fd04  prefixlen 64  scopeid 0x0<global>
+        ether 08:00:27:df:c6:d7  txqueuelen 1000  (Ethernet)
+        RX packets 3027  bytes 329690 (321.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1166  bytes 112960 (110.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2  bytes 208 (208.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2  bytes 208 (208.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+---IPV4 Table----
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+----IPV6 Table----
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+---Network Statistics----
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:hostmon         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp6       0      0 [::]:hostmon            [::]:*                  LISTEN     
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+udp        0      0 127.0.0.53:domain       0.0.0.0:*                          
+udp        0      0 localhost.locald:bootpc 0.0.0.0:*                          
+udp        0      0 0.0.0.0:hostmon         0.0.0.0:*                          
+udp        0      0 localhost:323           0.0.0.0:*                          
+udp6       0      0 [::]:hostmon            [::]:*                             
+udp6       0      0 localhost:323           [::]:*                             
+raw6       0      0 [::]:ipv6-icmp          [::]:*                  7          
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     STREAM     LISTENING     17921    /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     18095    @/org/kernel/linux/storage/multipathd
+unix  2      [ ACC ]     STREAM     LISTENING     21449    @ISCSID_UIP_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     11089    /run/systemd/journal/stdout
+unix  2      [ ACC ]     SEQPACKET  LISTENING     18003    /run/systemd/coredump
+unix  2      [ ACC ]     STREAM     LISTENING     22560    /var/lib/sss/pipes/nss
+unix  2      [ ACC ]     STREAM     LISTENING     22283    /var/lib/sss/pipes/private/sbus-monitor
+unix  2      [ ACC ]     STREAM     LISTENING     22301    /var/lib/sss/pipes/private/sbus-dp_implicit_files.872
+unix  2      [ ACC ]     STREAM     LISTENING     22175    /var/run/lsm/ipc/simc
+unix  2      [ ACC ]     STREAM     LISTENING     22177    /var/run/lsm/ipc/sim
+unix  2      [ ACC ]     STREAM     LISTENING     21444    @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     21441    /var/run/.heim_org.h5l.kcm-socket
+unix  2      [ ACC ]     STREAM     LISTENING     21445    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     28875    /run/user/0/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     28884    /run/user/0/bus
+unix  2      [ ACC ]     STREAM     LISTENING     24296    /var/run/fail2ban/fail2ban.sock
+unix  2      [ ACC ]     STREAM     LISTENING     18423    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     22012    /var/run/mcelog-client
+unix  2      [ ACC ]     SEQPACKET  LISTENING     18174    /run/udev/control
+Active Bluetooth connections (only servers)
+Proto  Destination       Source            State         PSM DCID   SCID      IMTU    OMTU Security
+Proto  Destination       Source            State     Channel
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:hostmon         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp6       0      0 [::]:hostmon            [::]:*                  LISTEN     
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+---netstat -vatn----
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp6       0      0 :::5355                 :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+---netstat -vaun----
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 192.168.0.82:68         0.0.0.0:*                          
+udp        0      0 0.0.0.0:5355            0.0.0.0:*                          
+udp        0      0 127.0.0.1:323           0.0.0.0:*                          
+udp6       0      0 :::5355                 :::*                               
+udp6       0      0 ::1:323                 :::*                               
+---lsof -i----
+COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+chronyd    861          chrony    6u  IPv4  22119      0t0  UDP localhost:323 
+chronyd    861          chrony    7u  IPv6  22121      0t0  UDP localhost:323 
+NetworkMa  882            root   19u  IPv4  27858      0t0  UDP localhost.localdomain:bootpc 
+sshd       892            root    4u  IPv4  23290      0t0  TCP *:ssh (LISTEN)
+sshd       892            root    6u  IPv6  23299      0t0  TCP *:ssh (LISTEN)
+systemd-r 1300 systemd-resolve   12u  IPv4  28387      0t0  UDP *:hostmon 
+systemd-r 1300 systemd-resolve   13u  IPv4  28388      0t0  TCP *:hostmon (LISTEN)
+systemd-r 1300 systemd-resolve   14u  IPv6  28390      0t0  UDP *:hostmon 
+systemd-r 1300 systemd-resolve   15u  IPv6  28391      0t0  TCP *:hostmon (LISTEN)
+systemd-r 1300 systemd-resolve   18u  IPv4  28393      0t0  UDP 127.0.0.53:domain 
+---ifconfig----
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.82  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::aa73:d2d4:e97e:55b2  prefixlen 64  scopeid 0x20<link>
+        inet6 2601:18a:8302:49e5:fb9a:d22:f62c:fd04  prefixlen 64  scopeid 0x0<global>
+        ether 08:00:27:df:c6:d7  txqueuelen 1000  (Ethernet)
+        RX packets 3052  bytes 332104 (324.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1179  bytes 114166 (111.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 2  bytes 208 (208.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2  bytes 208 (208.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+---IPV4 Table----
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+----IPV6 Table----
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+---Network Statistics----
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:hostmon         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp6       0      0 [::]:hostmon            [::]:*                  LISTEN     
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+udp        0      0 127.0.0.53:domain       0.0.0.0:*                          
+udp        0      0 localhost.locald:bootpc 0.0.0.0:*                          
+udp        0      0 0.0.0.0:hostmon         0.0.0.0:*                          
+udp        0      0 localhost:323           0.0.0.0:*                          
+udp6       0      0 [::]:hostmon            [::]:*                             
+udp6       0      0 localhost:323           [::]:*                             
+raw6       0      0 [::]:ipv6-icmp          [::]:*                  7          
+Active UNIX domain sockets (only servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     STREAM     LISTENING     17921    /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     18095    @/org/kernel/linux/storage/multipathd
+unix  2      [ ACC ]     STREAM     LISTENING     21449    @ISCSID_UIP_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     11089    /run/systemd/journal/stdout
+unix  2      [ ACC ]     SEQPACKET  LISTENING     18003    /run/systemd/coredump
+unix  2      [ ACC ]     STREAM     LISTENING     22560    /var/lib/sss/pipes/nss
+unix  2      [ ACC ]     STREAM     LISTENING     22283    /var/lib/sss/pipes/private/sbus-monitor
+unix  2      [ ACC ]     STREAM     LISTENING     22301    /var/lib/sss/pipes/private/sbus-dp_implicit_files.872
+unix  2      [ ACC ]     STREAM     LISTENING     22175    /var/run/lsm/ipc/simc
+unix  2      [ ACC ]     STREAM     LISTENING     22177    /var/run/lsm/ipc/sim
+unix  2      [ ACC ]     STREAM     LISTENING     21444    @ISCSIADM_ABSTRACT_NAMESPACE
+unix  2      [ ACC ]     STREAM     LISTENING     21441    /var/run/.heim_org.h5l.kcm-socket
+unix  2      [ ACC ]     STREAM     LISTENING     21445    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     28875    /run/user/0/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     28884    /run/user/0/bus
+unix  2      [ ACC ]     STREAM     LISTENING     24296    /var/run/fail2ban/fail2ban.sock
+unix  2      [ ACC ]     STREAM     LISTENING     18423    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     22012    /var/run/mcelog-client
+unix  2      [ ACC ]     SEQPACKET  LISTENING     18174    /run/udev/control
+Active Bluetooth connections (only servers)
+Proto  Destination       Source            State         PSM DCID   SCID      IMTU    OMTU Security
+Proto  Destination       Source            State     Channel
+---netstat -vat----
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:hostmon         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp6       0      0 [::]:hostmon            [::]:*                  LISTEN     
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+---netstat -vatn----
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp6       0      0 :::5355                 :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+---netstat -vaun----
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 192.168.0.82:68         0.0.0.0:*                          
+udp        0      0 0.0.0.0:5355            0.0.0.0:*                          
+udp        0      0 127.0.0.1:323           0.0.0.0:*                          
+udp6       0      0 :::5355                 :::*                               
+udp6       0      0 ::1:323                 :::*                               
+---lsof -i----
+COMMAND    PID            USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+chronyd    861          chrony    6u  IPv4  22119      0t0  UDP localhost:323 
+chronyd    861          chrony    7u  IPv6  22121      0t0  UDP localhost:323 
+NetworkMa  882            root   19u  IPv4  27858      0t0  UDP localhost.localdomain:bootpc 
+sshd       892            root    4u  IPv4  23290      0t0  TCP *:ssh (LISTEN)
+sshd       892            root    6u  IPv6  23299      0t0  TCP *:ssh (LISTEN)
+systemd-r 1300 systemd-resolve   12u  IPv4  28387      0t0  UDP *:hostmon 
+systemd-r 1300 systemd-resolve   13u  IPv4  28388      0t0  TCP *:hostmon (LISTEN)
+systemd-r 1300 systemd-resolve   14u  IPv6  28390      0t0  UDP *:hostmon 
+systemd-r 1300 systemd-resolve   15u  IPv6  28391      0t0  TCP *:hostmon (LISTEN)
+systemd-r 1300 systemd-resolve   18u  IPv4  28393      0t0  UDP 127.0.0.53:domain 

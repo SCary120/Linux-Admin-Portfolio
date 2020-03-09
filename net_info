@@ -1,0 +1,26 @@
+date
+
+echo "---ifconfig----"
+ifconfig -a
+
+echo "---IPV4 Table----"
+iptables -L
+
+echo "----IPV6 Table----"
+ip6tables -L
+
+echo "---Network Statistics----"
+netstat -l
+
+echo "---netstat -vat----"
+netstat -vat
+
+echo "---netstat -vatn----"
+netstat -vatn
+
+echo "---netstat -vaun----"
+netstat -vaun
+
+echo "---lsof -i----"
+lsof -i
+
