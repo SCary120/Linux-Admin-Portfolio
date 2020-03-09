@@ -8,7 +8,7 @@ ln = 1
 while ln < 21:
     line = linecache.getline(file, ln).strip()
     admin.write(line + '\n')
-    print("usermod -a -G admin,wheel " + line)
+    os.system("usermod -a -G admin,wheel " + line)
     ln +=1
 
 admin.close()
