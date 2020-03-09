@@ -1,1 +1,6 @@
-sed -e '1 i\PERSONNEL FILE' -e '$a\THE END\' -n '/500$/p datebook.txt - e 's/^\([^ ]*\) \([^:]*\)/\2 \1/'
+#!/usr/bin/sed -f
+
+s%^\([^ ]*\) \([^:]*\)%\2 \1%
+s%500$%%g
+1 i\PERSONNEL FILE
+$a\THE END\
