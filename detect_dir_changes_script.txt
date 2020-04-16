@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Generate timestamp, hash, and watch for changes in /etc/directory, redirect output to text file.
+
+date >> /root/class/test/etc_monitoring_log.txt
+
+sha1sum /etc/* | sha1sum >> /root/class/test/etc_monitoring_log.txt
+
+inotifywait -m /etc >> /root/class/test/etc_monitoring_log.txt
+
+# Generate timestamp, hash, and watch for changes in /var/log directory, redirect output to text file.
+
+sha1sum /var/log/* | sha1sum >> /root/class/test/var_log_monitoring.txt
+
+inotifywait -m /var/log >> /root/class/test/var_log_monitoring.txt

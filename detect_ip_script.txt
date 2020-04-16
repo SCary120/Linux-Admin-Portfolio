@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Log the date of the collection or scan.
+
+date >> /root/class/test/network_scan.txt
+
+# scan for IP addresses on my network and redirect the output to a text file.
+
+nmap -sT -0 192.169.0.0/24 >> /root/class/test/network_scan.txt

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Append log file with date of collection.
+
+date >> /root/class/test/monitor_hidden_log.txt
+
+# List only the hidden files in root.
+
+ls -ld /root/.?* >> /root/class/test/monitor_hidden_log.txt
+
+# List the statistics on the hidden files such as last modifaction date etc..
+
+stat /root/.?* >> /root/class/test/monitor_hidden_log.txt
