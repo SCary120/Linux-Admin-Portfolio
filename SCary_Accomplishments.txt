@@ -42,52 +42,52 @@ Week ending 3/8
 
 Week ending 3/15
 
-    Accomplishment - 
+    Accomplishment - Uploaded all assignments thus far to my github and presented my portfolio.
 
-    Challenge - 
+    Challenge -  Survive the pandemic
 
 First portfolio, accomplishments, documentation and presentation review in class
 
 Week ending 3/22
 
-    Accomplishment - 
+    Accomplishment -  Surviving Pandemic, getting supplies at the grocery store.
 
-    Challenge - 
+    Challenge -  Not knowing how to proceed with school for the time being due to stay at home orders.  Awaiting further update from NECC.
 
 Week ending 3/29
 
-    Accomplishment - 
+    Accomplishment - Checked in routinely for updates from NECC and Professors.
 
-    Challenge - 
+    Challenge -  Survive Pandemic
 
 Week ending 4/5
 
-    Accomplishment - 
+    Accomplishment -  Completed Firewalls lab only to find I am a week early :(
 
-    Challenge - 
+    Challenge - Trying to stay motivated to do school work.
 
 Week ending 4/12
 
-    Accomplishment - 
+    Accomplishment -  Made progress on Security labs, submitted Part 1 and all documentation to Github on 4/16, a few days late but feels good to have it done.
 
-    Challenge - 
+    Challenge -  Trying to stay motivated to do school work, a lot of distractions at home and its so close to end of term.
 
 Week ending 4/19
 
-    Accomplishment - 
+    Accomplishment -  Completed most of my security/hardening labs.
 
-    Challenge - 
+    Challenge - Motivation is a struggle.
 
 Week ending 4/26
 
-    Accomplishment - 
+    Accomplishment - Finished documentation for Docker.
 
-    Challenge - 
+    Challenge - Ansil, did not find the tutorial very helpful..was difficult to know which files to edit/create.
 
 Week ending 5/3
 
-    Accomplishment - 
+    Accomplishment -  Finished my containers lab and completed my recording for Final Presentation.
 
-    Challenge - 
+    Challenge -  Kubernetes was a challenge, failed to install in my CentOS VM.
 
 Final review for portfolio, documentation, accomplishments.  This is the final review for your three months at Acme Corporation.
